@@ -33,6 +33,7 @@ iptables -A INPUT -s 59.47.5.234 -j DROP
 iptables -A INPUT -s 59.47.5.242 -j DROP
 iptables -A INPUT -s 61.152.106.242 -j DROP
 iptables -A INPUT -s 61.220.69.184 -j DROP
+iptables -A INPUT -s 101.100.178.139 -j DROP
 iptables -A INPUT -s 103.207.36.35 -j DROP
 iptables -A INPUT -s 103.207.36.48 -j DROP
 iptables -A INPUT -s 103.207.36.113 -j DROP
@@ -80,6 +81,7 @@ iptables -A INPUT -s 125.88.146.108 -j DROP
 iptables -A INPUT -s 171.48.43.215 -j DROP
 iptables -A INPUT -s 171.232.95.150 -j DROP
 iptables -A INPUT -s 171.233.169.100 -j DROP
+iptables -A INPUT -s 171.249.247.104 -j DROP
 iptables -A INPUT -s 178.62.93.40 -j DROP
 iptables -A INPUT -s 180.97.197.10 -j DROP
 iptables -A INPUT -s 180.168.16.154 -j DROP
@@ -93,6 +95,7 @@ iptables -A INPUT -s 183.60.111.6 -j DROP
 iptables -A INPUT -s 183.60.211.137 -j DROP
 iptables -A INPUT -s 183.60.227.99 -j DROP
 iptables -A INPUT -s 183.61.146.10 -j DROP
+iptables -A INPUT -s 183.80.144.202 -j DROP
 iptables -A INPUT -s 183.80.178.38 -j DROP
 iptables -A INPUT -s 185.66.9.221 -j DROP
 iptables -A INPUT -s 197.37.174.177 -j DROP
@@ -125,7 +128,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 261)
+# Plage d'adresses IP bloques (Prochain 268)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -615,3 +618,16 @@ iptables -I INPUT 258 -s 91.76.0.0/14 -j DROP
 iptables -I INPUT 259 -s 190.85.0.0/16 -j DROP
 # 184.170.152.104
 iptables -I INPUT 260 -s 184.170.144.0/20 -j DROP
+# 107.189.162.133
+iptables -I INPUT 261 -s 107.189.128.0/18 -j DROP
+iptables -I INPUT 262 -s 107.189.162.128/26 -j DROP
+# 2.235.53.62
+iptables -I INPUT 263 -s 2.232.0.0/13 -j DROP
+# 171.60.208.4
+iptables -I INPUT 264 -s 171.60.192.0/18 -j DROP
+# 2.80.164.103
+iptables -I INPUT 265 -s 2.80.0.0/14 -j DROP
+# 164.132.203.36
+iptables -I INPUT 266 -s 164.132.0.0/16 -j DROP
+# 117.239.48.242
+iptables -I INPUT 267 -s 117.239.48.0/20 -j DROP
