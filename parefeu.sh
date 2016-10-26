@@ -24,6 +24,7 @@ iptables -A INPUT -s 31.6.31.49 -j DROP
 iptables -A INPUT -s 41.248.177.9 -j DROP
 iptables -A INPUT -s 42.112.31.88 -j DROP
 iptables -A INPUT -s 42.114.143.219 -j DROP
+iptables -A INPUT -s 42.114.202.200 -j DROP
 iptables -A INPUT -s 42.118.54.240 -j DROP
 iptables -A INPUT -s 58.216.15.248 -j DROP
 iptables -A INPUT -s 59.45.79.22 -j DROP
@@ -86,6 +87,7 @@ iptables -A INPUT -s 178.62.93.40 -j DROP
 iptables -A INPUT -s 180.97.197.10 -j DROP
 iptables -A INPUT -s 180.168.16.154 -j DROP
 iptables -A INPUT -s 182.100.67.62 -j DROP
+iptables -A INPUT -s 182.100.67.248 -j DROP
 iptables -A INPUT -s 183.3.202.170 -j DROP
 iptables -A INPUT -s 183.3.202.171 -j DROP
 iptables -A INPUT -s 183.3.202.172 -j DROP
@@ -118,6 +120,7 @@ iptables -A INPUT -s 222.186.21.119 -j DROP
 iptables -A INPUT -s 222.186.34.74 -j DROP
 iptables -A INPUT -s 222.186.34.75 -j DROP
 iptables -A INPUT -s 222.186.34.88 -j DROP
+iptables -A INPUT -s 222.186.34.130 -j DROP
 iptables -A INPUT -s 222.186.34.202 -j DROP
 iptables -A INPUT -s 222.186.50.215 -j DROP
 iptables -A INPUT -s 222.186.51.168 -j DROP
@@ -128,7 +131,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 268)
+# Plage d'adresses IP bloques (Prochain 275)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -631,3 +634,17 @@ iptables -I INPUT 265 -s 2.80.0.0/14 -j DROP
 iptables -I INPUT 266 -s 164.132.0.0/16 -j DROP
 # 117.239.48.242
 iptables -I INPUT 267 -s 117.239.48.0/20 -j DROP
+# 217.23.3.139
+iptables -I INPUT 268 -s 217.23.0.0/20 -j DROP
+# 201.179.183.239
+iptables -I INPUT 269 -s 201.176.0.0/14 -j DROP
+# 185.26.127.118
+iptables -I INPUT 270 -s 185.26.124.0/22 -j DROP
+# 27.98.204.116
+iptables -I INPUT 271 -s 27.98.192.0/20 -j DROP
+# 2.190.87.199
+iptables -I INPUT 272 -s 2.190.0.0/16 -j DROP
+# 120.197.234.50
+iptables -I INPUT 273 -s 120.192.0.0/11 -j DROP
+# 185.8.67.36
+iptables -I INPUT 274 -s 185.8.67.0/24 -j DROP
