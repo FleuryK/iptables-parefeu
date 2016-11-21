@@ -26,6 +26,7 @@ iptables -A INPUT -s 42.112.31.88 -j DROP
 iptables -A INPUT -s 42.114.143.219 -j DROP
 iptables -A INPUT -s 42.114.202.200 -j DROP
 iptables -A INPUT -s 42.118.54.240 -j DROP
+iptables -A INPUT -s 58.187.135.78 -j DROP
 iptables -A INPUT -s 58.216.15.248 -j DROP
 iptables -A INPUT -s 59.45.79.22 -j DROP
 iptables -A INPUT -s 59.45.79.24 -j DROP
@@ -70,6 +71,7 @@ iptables -A INPUT -s 116.236.231.251 -j DROP
 iptables -A INPUT -s 117.21.173.163 -j DROP
 iptables -A INPUT -s 118.69.61.69 -j DROP
 iptables -A INPUT -s 118.70.168.251 -j DROP
+iptables -A INPUT -s 118.70.184.22 -j DROP
 iptables -A INPUT -s 118.123.119.102 -j DROP
 iptables -A INPUT -s 118.193.20.114 -j DROP
 iptables -A INPUT -s 118.209.88.13 -j DROP
@@ -136,7 +138,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 304)
+# Plage d'adresses IP bloques (Prochain 318)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -703,3 +705,31 @@ iptables -I INPUT 301 -s 87.128.0.0/11 -j DROP
 iptables -I INPUT 302 -s 201.254.0.0/16 -j DROP
 # 212.13.119.198
 iptables -I INPUT 303 -s 212.13.96.0/19 -j DROP
+# 89.47.105.241
+iptables -I INPUT 304 -s 89.47.105.0/24 -j DROP
+# 190.51.182.56
+iptables -I INPUT 305 -s 190.51.0.0/16 -j DROP
+# 122.172.95.36
+iptables -I INPUT 306 -s 122.172.0.0/17 -j DROP
+# 82.113.72.174
+iptables -I INPUT 307 -s 82.113.64.0/19 -j DROP
+# 166.149.75.102
+iptables -I INPUT 308 -s 166.128.0.0/9 -j DROP
+# 37.49.224.160
+iptables -I INPUT 309 -s 37.49.224.0/24 -j DROP
+# 117.195.47.236
+iptables -I INPUT 310 -s 117.195.32.0/20 -j DROP
+# 166.82.95.228
+iptables -I INPUT 311 -s 166.82.0.0/16 -j DROP
+# 122.168.209.99
+iptables -I INPUT 312 -s 122.168.209.0/24 -j DROP
+# 5.164.97.164
+iptables -I INPUT 313 -s 5.164.96.0/22 -j DROP
+# 117.195.76.207
+iptables -I INPUT 314 -s 117.195.64.0/20 -j DROP
+# 46.41.205.191
+iptables -I INPUT 315 -s 46.41.192.0/19 -j DROP
+# 84.22.139.134
+iptables -I INPUT 316 -s 84.22.139.0/24 -j DROP
+# 2.177.59.180
+iptables -I INPUT 317 -s 2.177.0.0/16 -j DROP
