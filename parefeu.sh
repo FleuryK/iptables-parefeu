@@ -144,7 +144,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 336)
+# Plage d'adresses IP bloques (Prochain 337)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -774,3 +774,5 @@ iptables -I INPUT 333 -s 104.238.167.0/24 -j DROP
 iptables -I INPUT 334 -s 117.203.48.0/20 -j DROP
 # 199.168.177.172
 iptables -I INPUT 335 -s 199.168.176.0/21 -j DROP
+# 92.198.5.52
+iptables -I INPUT 336 -s 92.192.0.0/13 -j DROP
