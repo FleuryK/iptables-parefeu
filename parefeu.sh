@@ -33,6 +33,8 @@ iptables -A INPUT -s 59.45.79.24 -j DROP
 iptables -A INPUT -s 59.47.5.229 -j DROP
 iptables -A INPUT -s 59.47.5.234 -j DROP
 iptables -A INPUT -s 59.47.5.242 -j DROP
+iptables -A INPUT -s 59.63.166.83 -j DROP
+iptables -A INPUT -s 59.63.188.2 -j DROP
 iptables -A INPUT -s 61.152.106.242 -j DROP
 iptables -A INPUT -s 61.220.69.184 -j DROP
 iptables -A INPUT -s 101.100.178.139 -j DROP
@@ -78,6 +80,7 @@ iptables -A INPUT -s 118.209.88.13 -j DROP
 iptables -A INPUT -s 119.60.9.7 -j DROP
 iptables -A INPUT -s 119.130.87.223 -j DROP
 iptables -A INPUT -s 119.145.99.238 -j DROP
+iptables -A INPUT -s 121.134.178.234 -j DROP
 iptables -A INPUT -s 123.149.0.33 -j DROP
 iptables -A INPUT -s 124.36.221.232 -j DROP
 iptables -A INPUT -s 124.191.69.195 -j DROP
@@ -144,7 +147,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 337)
+# Plage d'adresses IP bloques (Prochain 342)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -776,3 +779,13 @@ iptables -I INPUT 334 -s 117.203.48.0/20 -j DROP
 iptables -I INPUT 335 -s 199.168.176.0/21 -j DROP
 # 92.198.5.52
 iptables -I INPUT 336 -s 92.192.0.0/13 -j DROP
+# 183.91.71.179
+iptables -I INPUT 337 -s 183.91.64.0/19 -j DROP
+# 87.121.98.37
+iptables -I INPUT 338 -s 87.121.98.0/24 -j DROP
+# 46.117.76.245
+iptables -I INPUT 339 -s 46.117.0.0/16 -j DROP
+# 122.194.229.6
+iptables -I INPUT 340 -s 122.192.0.0/14 -j DROP
+# 119.252.161.172
+iptables -I INPUT 341 -s 119.252.161.0/24 -j DROP
