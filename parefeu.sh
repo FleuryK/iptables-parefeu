@@ -3,15 +3,15 @@
 # On flush
 iptables -F
 
-# Connexion etablie
+# Connexion etablie / Connection established
 iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 
-# Autoriser le loopback
+# Autoriser le loopback / Allow loopback
 iptables -A INPUT -i lo -j ACCEPT
 iptables -A OUTPUT -o lo -j ACCEPT
 
-# Adresses IP bloques
+# Adresses IP bloques / IP addresses blocked
 iptables -A INPUT -s 1.52.76.148 -j DROP
 iptables -A INPUT -s 1.53.15.120 -j DROP
 iptables -A INPUT -s 1.55.245.42 -j DROP
@@ -63,6 +63,7 @@ iptables -A INPUT -s 116.31.116.4 -j DROP
 iptables -A INPUT -s 116.31.116.10 -j DROP
 iptables -A INPUT -s 116.31.116.20 -j DROP
 iptables -A INPUT -s 116.31.116.21 -j DROP
+iptables -A INPUT -s 116.31.116.23 -j DROP
 iptables -A INPUT -s 116.31.116.27 -j DROP
 iptables -A INPUT -s 116.31.116.34 -j DROP
 iptables -A INPUT -s 116.31.116.36 -j DROP
@@ -129,6 +130,7 @@ iptables -A INPUT -s 218.65.30.56 -j DROP
 iptables -A INPUT -s 218.65.30.57 -j DROP
 iptables -A INPUT -s 218.65.30.60 -j DROP
 iptables -A INPUT -s 218.65.30.86 -j DROP
+iptables -A INPUT -s 218.65.30.134 -j DROP
 iptables -A INPUT -s 218.65.30.217 -j DROP
 iptables -A INPUT -s 218.87.109.245 -j DROP
 iptables -A INPUT -s 218.87.109.249 -j DROP
@@ -149,7 +151,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloques (Prochain 343)
+# Plage d'adresses IP bloquees (Prochain 347) / IP address blocking range (Next 347)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -793,3 +795,10 @@ iptables -I INPUT 340 -s 122.192.0.0/14 -j DROP
 iptables -I INPUT 341 -s 119.252.161.0/24 -j DROP
 # 157.100.4.6
 iptables -I INPUT 342 -s 157.100.0.0/16 -j DROP
+# 71.71.207.48
+iptables -I INPUT 343 -s 71.64.0.0/12 -j DROP
+# 201.16.178.157
+iptables -I INPUT 344 -s 201.16.176.0/20 -j DROP
+iptables -I INPUT 345 -s 201.16.176.0/21 -j DROP
+# 123.183.209.135
+iptables -I INPUT 346 -s 123.183.192.0/18 -j DROP
