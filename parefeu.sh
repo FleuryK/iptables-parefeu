@@ -64,6 +64,7 @@ iptables -A INPUT -s 116.31.116.10 -j DROP
 iptables -A INPUT -s 116.31.116.20 -j DROP
 iptables -A INPUT -s 116.31.116.21 -j DROP
 iptables -A INPUT -s 116.31.116.23 -j DROP
+iptables -A INPUT -s 116.31.116.26 -j DROP
 iptables -A INPUT -s 116.31.116.27 -j DROP
 iptables -A INPUT -s 116.31.116.34 -j DROP
 iptables -A INPUT -s 116.31.116.36 -j DROP
