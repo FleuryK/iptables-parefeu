@@ -125,6 +125,7 @@ iptables -A INPUT -s 202.52.46.116 -j DROP
 iptables -A INPUT -s 202.75.214.116 -j DROP
 iptables -A INPUT -s 210.245.88.170 -j DROP
 iptables -A INPUT -s 218.65.30.4 -j DROP
+iptables -A INPUT -s 218.65.30.30 -j DROP
 iptables -A INPUT -s 218.65.30.41 -j DROP
 iptables -A INPUT -s 218.65.30.43 -j DROP
 iptables -A INPUT -s 218.65.30.56 -j DROP
@@ -152,7 +153,7 @@ iptables -A INPUT -s 222.186.56.102 -j DROP
 iptables -A INPUT -s 222.186.56.119 -j DROP
 iptables -A INPUT -s 222.186.160.107 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 350) / IP address blocking range (Next 350)
+# Plage d'adresses IP bloquees (Prochain 353) / IP address blocking range (Next 353)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -807,3 +808,9 @@ iptables -I INPUT 346 -s 123.183.192.0/18 -j DROP
 iptables -I INPUT 347 -s 68.64.128.0/18 -j DROP
 iptables -I INPUT 348 -s 68.64.160.0/20 -j DROP
 iptables -I INPUT 349 -s 68.64.174.184/29 -j DROP
+# 5.45.72.39
+iptables -I INPUT 350 -s 5.45.72.0/22 -j DROP
+# 185.36.14.9
+iptables -I INPUT 351 -s 185.36.12.0/22 -j DROP
+# 112.85.42.123
+iptables -I INPUT 352 -s 112.80.0.0/13 -j DROP
