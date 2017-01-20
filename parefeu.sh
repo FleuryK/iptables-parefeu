@@ -102,6 +102,7 @@ iptables -A INPUT -s 180.168.16.154 -j DROP
 iptables -A INPUT -s 182.100.67.4 -j DROP
 iptables -A INPUT -s 182.100.67.40 -j DROP
 iptables -A INPUT -s 182.100.67.62 -j DROP
+iptables -A INPUT -s 182.100.67.76 -j DROP
 iptables -A INPUT -s 182.100.67.113 -j DROP
 iptables -A INPUT -s 182.100.67.118 -j DROP
 iptables -A INPUT -s 182.100.67.248 -j DROP
