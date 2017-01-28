@@ -135,7 +135,10 @@ iptables -A INPUT -s 218.65.30.57 -j DROP
 iptables -A INPUT -s 218.65.30.60 -j DROP
 iptables -A INPUT -s 218.65.30.86 -j DROP
 iptables -A INPUT -s 218.65.30.134 -j DROP
+iptables -A INPUT -s 218.65.30.210 -j DROP
 iptables -A INPUT -s 218.65.30.217 -j DROP
+iptables -A INPUT -s 218.65.30.238 -j DROP
+iptables -A INPUT -s 218.87.109.154 -j DROP
 iptables -A INPUT -s 218.87.109.245 -j DROP
 iptables -A INPUT -s 218.87.109.249 -j DROP
 iptables -A INPUT -s 221.140.57.199 -j DROP
