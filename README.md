@@ -10,4 +10,9 @@ Adresses IP et plages d'adresses IP bloqués / IP address and IP address range b
 <code>chmod +x parefeu</code></li>
 <li>Taper <code>/etc/init.d/parefeu</code> dans le terminal afin de le mettre en fonctionnement / Type <code>/etc/init.d/parefeu</code> in the terminal to put in operation
 <li>Si vous souhaitez lors du redémarrage que ce fichier réapplique les règles, taper <code>update-rc.d parefeu defaults</code> dans le terminal / If you would when restarting this file applies the rules, type <code>update-rc.d parefeu defaults</code> in the terminal</li>
-</ul>
+</ul><br /><br />
+
+# Statistiques / Statistics
+253 adresses IP bloqués / 253 IP address bloqued<br />
+573 plages d'adresses IP bloqués / 573 IP address range bloqued<br /><br />
+Total : 826
