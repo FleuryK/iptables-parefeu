@@ -248,6 +248,7 @@ iptables -A INPUT -s 220.147.28.242 -j DROP
 iptables -A INPUT -s 220.187.54.8 -j DROP
 iptables -A INPUT -s 221.140.57.199 -j DROP
 iptables -A INPUT -s 222.44.63.11 -j DROP
+iptables -A INPUT -s 222.64.73.208 -j DROP
 iptables -A INPUT -s 222.80.13.13 -j DROP
 iptables -A INPUT -s 222.186.3.172 -j DROP
 iptables -A INPUT -s 222.186.21.119 -j DROP
