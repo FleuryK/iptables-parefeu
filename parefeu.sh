@@ -17,6 +17,7 @@ iptables -A INPUT -s 1.53.15.120 -j DROP
 iptables -A INPUT -s 1.55.245.42 -j DROP
 iptables -A INPUT -s 1.119.4.99 -j DROP
 iptables -A INPUT -s 1.182.138.146 -j DROP
+iptables -A INPUT -s 1.192.240.59 -j DROP
 iptables -A INPUT -s 14.20.251.92 -j DROP
 iptables -A INPUT -s 14.23.90.103 -j DROP
 iptables -A INPUT -s 14.141.54.13 -j DROP
