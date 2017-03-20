@@ -125,6 +125,7 @@ iptables -A INPUT -s 113.121.44.7 -j DROP
 iptables -A INPUT -s 113.121.219.11 -j DROP
 iptables -A INPUT -s 113.122.8.165 -j DROP
 iptables -A INPUT -s 113.122.182.186 -j DROP
+iptables -A INPUT -s 113.178.32.44 -j DROP
 iptables -A INPUT -s 113.246.129.4 -j DROP
 iptables -A INPUT -s 113.251.218.229 -j DROP
 iptables -A INPUT -s 114.161.238.80 -j DROP
@@ -222,6 +223,7 @@ iptables -A INPUT -s 125.124.31.110 -j DROP
 iptables -A INPUT -s 126.115.239.76 -j DROP
 iptables -A INPUT -s 137.74.40.43 -j DROP
 iptables -A INPUT -s 151.79.192.75 -j DROP
+iptables -A INPUT -s 151.227.144.254 -j DROP
 iptables -A INPUT -s 151.235.134.31 -j DROP
 iptables -A INPUT -s 171.9.11.29 -j DROP
 iptables -A INPUT -s 171.48.43.215 -j DROP
@@ -337,7 +339,7 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 689) / IP address blocking range (Next 689)
+# Plage d'adresses IP bloquees (Prochain 696) / IP address blocking range (Next 696)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -723,6 +725,7 @@ iptables -I INPUT 200 -s 193.201.224.0/22 -j DROP
 # 194.44.244.32
 iptables -I INPUT 201 -s 194.44.244.0/24 -j DROP
 # 195.3.144.98
+# 195.3.144.215
 iptables -I INPUT 202 -s 195.3.144.0/22 -j DROP
 # 195.154.56.55
 iptables -I INPUT 203 -s 195.154.0.0/16 -j DROP
@@ -880,6 +883,7 @@ iptables -I INPUT 283 -s 140.128.0.0/13 -j DROP
 iptables -I INPUT 284 -s 140.136.0.0/15 -j DROP
 iptables -I INPUT 285 -s 140.138.0.0/16 -j DROP
 # 105.101.21.197
+# 105.102.15.8
 iptables -I INPUT 286 -s 105.96.0.0/12 -j DROP
 # 91.220.131.63
 iptables -I INPUT 287 -s 91.220.131.0/24 -j DROP
@@ -1692,3 +1696,16 @@ iptables -I INPUT 686 -s 207.38.192.0/18 -j DROP
 iptables -I INPUT 687 -s 207.38.224.0/20 -j DROP
 # 75.107.69.176
 iptables -I INPUT 688 -s 75.104.0.0/14 -j DROP
+# 210.236.80.103
+iptables -I INPUT 689 -s 210.236.80.0/21 -j DROP
+# 188.212.103.47
+iptables -I INPUT 690 -s 188.212.100.0/22 -j DROP
+# 177.229.110.195
+iptables -I INPUT 691 -s 177.224.0.0/13 -j DROP
+# 35.184.20.198 (Sorry Google)
+iptables -I INPUT 692 -s 35.184.0.0/13 -j DROP
+# 185.36.81.218
+iptables -I INPUT 693 -s 185.36.81.0/24 -j DROP
+# 191.109.84.168
+iptables -I INPUT 694 -s 191.104.0.0/13 -j DROP
+iptables -I INPUT 695 -s 191.108.0.0/14 -j DROP
