@@ -46,9 +46,11 @@ iptables -A INPUT -s 42.114.202.200 -j DROP
 iptables -A INPUT -s 42.118.54.240 -j DROP
 iptables -A INPUT -s 45.244.22.19 -j DROP
 iptables -A INPUT -s 49.112.107.225 -j DROP
+iptables -A INPUT -s 49.228.221.189 -j DROP
 iptables -A INPUT -s 58.1.96.208 -j DROP
 iptables -A INPUT -s 58.101.115.47 -j DROP
 iptables -A INPUT -s 58.107.162.119 -j DROP
+iptables -A INPUT -s 58.143.150.109 -j DROP
 iptables -A INPUT -s 58.187.135.78 -j DROP
 iptables -A INPUT -s 58.216.15.248 -j DROP
 iptables -A INPUT -s 59.12.189.181 -j DROP
@@ -234,6 +236,7 @@ iptables -A INPUT -s 171.217.156.22 -j DROP
 iptables -A INPUT -s 171.232.95.150 -j DROP
 iptables -A INPUT -s 171.233.169.100 -j DROP
 iptables -A INPUT -s 171.249.247.104 -j DROP
+iptables -A INPUT -s 175.117.45.197 -j DROP
 iptables -A INPUT -s 175.138.97.192 -j DROP
 iptables -A INPUT -s 175.139.25.175 -j DROP
 iptables -A INPUT -s 175.143.18.61 -j DROP
@@ -341,10 +344,11 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 705) / IP address blocking range (Next 705)
+# Plage d'adresses IP bloquees (Prochain 717) / IP address blocking range (Next 717)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
+# 2.178.167.106
 iptables -I INPUT 2 -s 2.178.0.0/16 -j DROP
 # 5.164.112.20
 iptables -I INPUT 3 -s 5.164.112.0/22 -j DROP
@@ -414,6 +418,7 @@ iptables -I INPUT 42 -s 62.28.0.0/16 -j DROP
 # 62.57.98.189
 iptables -I INPUT 43 -s 62.57.96.0/22 -j DROP
 # 62.75.230.134
+# 62.75.244.249
 iptables -I INPUT 44 -s 62.75.128.0/17 -j DROP
 # 62.90.95.171
 iptables -I INPUT 45 -s 62.90.0.0/16 -j DROP
@@ -808,6 +813,7 @@ iptables -I INPUT 241 -s 134.249.0.0/16 -j DROP
 iptables -I INPUT 242 -s 54.144.0.0/12 -j DROP
 # 176.94.34.10
 iptables -I INPUT 243 -s 176.94.0.0/17 -j DROP
+# 137.59.126.161
 # 137.59.203.182
 iptables -I INPUT 244 -s 137.59.0.0/16 -j DROP
 iptables -I INPUT 245 -s 137.59.203.0/24 -j DROP
@@ -1600,6 +1606,7 @@ iptables -I INPUT 634 -s 112.124.0.0/14 -j DROP
 # 110.224.216.200
 iptables -I INPUT 635 -s 110.224.216.0/24 -j DROP
 # 181.66.41.216
+# 181.67.235.2
 iptables -I INPUT 636 -s 181.66.0.0/15 -j DROP
 # 183.224.132.30
 iptables -I INPUT 637 -s 183.224.0.0/12 -j DROP
@@ -1727,3 +1734,24 @@ iptables -I INPUT 702 -s 65.112.0.0/12 -j DROP
 iptables -I INPUT 703 -s 65.126.253.128/26 -j DROP
 # 24.56.230.15
 iptables -I INPUT 704 -s 24.56.192.0/18 -j DROP
+# 190.205.54.150
+iptables -I INPUT 705 -s 190.200.0.0/13 -j DROP
+iptables -I INPUT 706 -s 190.204.0.0/14 -j DROP
+# 104.62.140.208
+iptables -I INPUT 707 -s 104.48.0.0/12 -j DROP
+# 107.32.85.39
+iptables -I INPUT 708 -s 107.24.0.0/13 -j DROP
+iptables -I INPUT 709 -s 107.32.0.0/11 -j DROP
+iptables -I INPUT 710 -s 107.32.0.0/17 -j DROP
+# 190.235.236.210
+iptables -I INPUT 711 -s 190.235.128.0/17 -j DROP
+# 83.165.225.238
+iptables -I INPUT 712 -s 83.165.192.0/18 -j DROP
+# 74.66.229.110
+iptables -I INPUT 713 -s 74.64.0.0/12 -j DROP
+# 176.53.32.252
+iptables -I INPUT 714 -s 176.53.32.0/24 -j DROP
+# 80.79.63.111
+iptables -I INPUT 715 -s 80.79.62.0/23 -j DROP
+# 80.218.150.182
+iptables -I INPUT 716 -s 80.218.0.0/15 -j DROP
