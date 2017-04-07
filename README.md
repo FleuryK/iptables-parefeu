@@ -13,6 +13,6 @@ Adresses IP et plages d'adresses IP bloqués / IP address and IP address range b
 </ul><br /><br />
 
 # Statistiques / Statistics
-253 adresses IP bloqués / 253 IP address bloqued<br />
-573 plages d'adresses IP bloqués / 573 IP address range bloqued<br /><br />
-Total : 826
+334 adresses IP bloqués / 334 IP address bloqued<br />
+790 plages d'adresses IP bloqués / 790 IP address range bloqued<br /><br />
+Total : 1124
