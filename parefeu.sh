@@ -349,7 +349,7 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 807) / IP address blocking range (Next 807)
+# Plage d'adresses IP bloquees (Prochain 823) / IP address blocking range (Next 823)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -1921,3 +1921,31 @@ iptables -I INPUT 804 -s 202.52.224.0/19 -j DROP
 iptables -I INPUT 805 -s 46.7.128.0/17 -j DROP
 # 85.93.93.113
 iptables -I INPUT 806 -s 85.93.92.0/22 -j DROP
+# 103.254.94.118
+iptables -I INPUT 807 -s 103.254.94.0/24 -j DROP
+# 146.115.234.85
+iptables -I INPUT 808 -s 146.115.0.0/16 -j DROP
+iptables -I INPUT 809 -s 146.115.224.0/19 -j DROP
+iptables -I INPUT 810 -s 146.115.232.0/22 -j DROP
+# 31.16.180.116
+iptables -I INPUT 811 -s 31.16.128.0/17 -j DROP
+# 201.217.142.186
+iptables -I INPUT 812 -s 201.217.142.184/29 -j DROP
+# 173.21.221.108
+iptables -I INPUT 813 -s 173.16.0.0/12 -j DROP
+iptables -I INPUT 814 -s 173.21.216.0/21 -j DROP
+# 190.218.131.144
+iptables -I INPUT 815 -s 190.218.0.0/16 -j DROP
+# 78.115.27.33
+iptables -I INPUT 816 -s 78.112.0.0/12 -j DROP
+# 77.58.48.179
+iptables -I INPUT 817 -s 77.58.0.0/15 -j DROP
+# 185.30.183.201
+iptables -I INPUT 818 -s 185.30.180.0/22 -j DROP
+# 115.127.82.34
+iptables -I INPUT 819 -s 115.127.0.0/17 -j DROP
+# 95.234.240.109
+iptables -I INPUT 820 -s 95.234.0.0/15 -j DROP
+# 190.196.145.74
+iptables -I INPUT 821 -s 190.196.128.0/19 -j DROP
+iptables -I INPUT 822 -s 190.196.144.0/21 -j DROP
