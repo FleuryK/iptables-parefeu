@@ -87,7 +87,11 @@ iptables -A INPUT -m geoip --src-cc HN -j DROP
 iptables -A INPUT -m geoip --src-cc SI -j DROP
 iptables -A INPUT -m geoip --src-cc MG -j DROP
 iptables -A INPUT -m geoip --src-cc AZ -j DROP
+iptables -A INPUT -m geoip --src-cc PY -j DROP
+iptables -A INPUT -m geoip --src-cc NO -j DROP
+iptables -A INPUT -m geoip --src-cc LA -j DROP
 iptables -A INPUT -s 91.121.91.82 -j DROP
+iptables -A INPUT -s 213.32.14.162 -j DROP
 iptables -I INPUT 1 -s 74.208.0.0/16 -j DROP #74.208.161.179
 iptables -I INPUT 2 -s 75.64.0.0/13 -j DROP #75.65.219.19
 iptables -I INPUT 3 -s 75.64.0.0/15 -j DROP #75.65.219.19
@@ -99,9 +103,9 @@ iptables -I INPUT 8 -s 84.200.0.0/16 -j DROP #84.200.93.172
 iptables -I INPUT 9 -s 85.93.92.0/22 -j DROP #85.93.93.113
 iptables -I INPUT 10 -s 92.39.240.0/20 -j DROP #92.39.245.25
 iptables -I INPUT 11 -s 92.233.0.0/16 -j DROP #92.233.140.27
-iptables -I INPUT 12 -s 213.32.0.0/17 -j DROP #213.32.14.162
-iptables -I INPUT 13 -s 37.120.160.0/19 -j DROP #37.120.186.215
-iptables -I INPUT 14 -s 195.154.0.0/16 -j DROP #195.154.102.221
+iptables -I INPUT 12 -s 37.120.160.0/19 -j DROP #37.120.186.215
+iptables -I INPUT 13 -s 195.154.0.0/16 -j DROP #195.154.102.221
+iptables -I INPUT 14 -s 62.210.0.0/16 -j DROP #62.210.192.216
 
 # IPv6
 ip6tables -t filter -A INPUT -m geoip --src-cc CN -j DROP
@@ -173,3 +177,6 @@ ip6tables -t filter -A INPUT -m geoip --src-cc HN -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc SI -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc MG -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc AZ -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc PY -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc NO -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc LA -j DROP
