@@ -49,6 +49,7 @@ iptables -A INPUT -s 42.118.54.240 -j DROP
 iptables -A INPUT -s 45.244.22.19 -j DROP
 iptables -A INPUT -s 49.112.107.225 -j DROP
 iptables -A INPUT -s 49.228.221.189 -j DROP
+iptables -A INPUT -s 51.15.66.27 -j DROP
 iptables -A INPUT -s 58.1.96.208 -j DROP
 iptables -A INPUT -s 58.101.115.47 -j DROP
 iptables -A INPUT -s 58.107.162.119 -j DROP
@@ -85,6 +86,7 @@ iptables -A INPUT -s 61.153.242.83 -j DROP
 iptables -A INPUT -s 61.166.73.213 -j DROP
 iptables -A INPUT -s 61.220.69.184 -j DROP
 iptables -A INPUT -s 86.245.250.193 -j DROP
+iptables -A INPUT -s 90.79.128.109 -j DROP
 iptables -A INPUT -s 101.100.178.139 -j DROP
 iptables -A INPUT -s 103.207.36.35 -j DROP
 iptables -A INPUT -s 103.207.36.48 -j DROP
@@ -113,6 +115,7 @@ iptables -A INPUT -s 111.73.45.16 -j DROP
 iptables -A INPUT -s 111.127.119.66 -j DROP
 iptables -A INPUT -s 112.78.14.226 -j DROP
 iptables -A INPUT -s 112.99.210.248 -j DROP
+iptables -A INPUT -s 112.135.50.183 -j DROP
 iptables -A INPUT -s 112.135.61.155 -j DROP
 iptables -A INPUT -s 112.204.191.115 -j DROP
 iptables -A INPUT -s 112.222.92.198 -j DROP
@@ -354,7 +357,7 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 925) / IP address blocking range (Next 925)
+# Plage d'adresses IP bloquees (Prochain 954) / IP address blocking range (Next 954)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -1737,6 +1740,7 @@ iptables -I INPUT 685 -s 207.38.128.0/17 -j DROP
 iptables -I INPUT 686 -s 207.38.192.0/18 -j DROP
 iptables -I INPUT 687 -s 207.38.224.0/20 -j DROP
 # 75.107.69.176
+# 75.107.162.26
 iptables -I INPUT 688 -s 75.104.0.0/14 -j DROP
 # 210.236.80.103
 iptables -I INPUT 689 -s 210.236.80.0/21 -j DROP
@@ -2129,6 +2133,7 @@ iptables -I INPUT 911 -s 99.196.0.0/15 -j DROP
 iptables -I INPUT 912 -s 99.198.0.0/18 -j DROP
 iptables -I INPUT 913 -s 99.198.64.0/19 -j DROP
 # 212.237.20.206
+# 212.237.23.92
 iptables -I INPUT 914 -s 212.237.0.0/18 -j DROP
 # 86.134.139.24
 iptables -I INPUT 915 -s 86.128.0.0/12 -j DROP
@@ -2148,3 +2153,55 @@ iptables -I INPUT 922 -s 38.0.0.0/8 -j DROP
 iptables -I INPUT 923 -s 38.109.166.0/23 -j DROP
 # 79.13.251.142
 iptables -I INPUT 924 -s 79.12.0.0/15 -j DROP
+# 94.23.109.246
+iptables -I INPUT 925 -s 94.23.0.0/16 -j DROP
+# 24.201.222.174
+iptables -I INPUT 926 -s 24.200.0.0/14 -j DROP
+iptables -I INPUT 927 -s 24.201.222.0/24 -j DROP
+# 109.133.2.184
+iptables -I INPUT 928 -s 109.132.0.0/14 -j DROP
+# 5.189.140.176
+iptables -I INPUT 929 -s 5.189.128.0/20 -j DROP
+# 151.67.243.133
+iptables -I INPUT 930 -s 151.67.0.0/16 -j DROP
+# 198.48.208.37
+iptables -I INPUT 931 -s 198.48.128.0/17 -j DROP
+iptables -I INPUT 932 -s 198.48.208.0/21 -j DROP
+# 151.75.7.239
+iptables -I INPUT 933 -s 151.75.0.0/16 -j DROP
+# 72.184.93.52
+iptables -I INPUT 934 -s 72.176.0.0/12 -j DROP
+# 50.193.74.148
+iptables -I INPUT 935 -s 50.128.0.0/9 -j DROP
+# 74.194.6.5
+iptables -I INPUT 936 -s 74.192.0.0/14 -j DROP
+iptables -I INPUT 937 -s 74.196.0.0/15 -j DROP
+# 79.146.248.52
+iptables -I INPUT 938 -s 79.146.0.0/16 -j DROP
+# 172.115.11.120
+iptables -I INPUT 939 -s 172.112.0.0/13 -j DROP
+# 79.234.162.174
+iptables -I INPUT 940 -s 79.192.0.0/10 -j DROP
+# 87.179.91.129
+iptables -I INPUT 941 -s 87.128.0.0/10 -j DROP
+# 76.189.78.69
+iptables -I INPUT 942 -s 76.188.0.0/15 -j DROP
+iptables -I INPUT 943 -s 45.48.0.0/14 -j DROP
+iptables -I INPUT 944 -s 45.51.0.0/18 -j DROP
+# 188.165.34.41
+iptables -I INPUT 945 -s 188.165.0.0/16 -j DROP
+# 31.16.108.174
+iptables -I INPUT 946 -s 31.16.0.0/17 -j DROP
+# 104.162.136.95
+iptables -I INPUT 947 -s 104.162.0.0/16 -j DROP
+# 207.138.132.44
+iptables -I INPUT 948 -s 207.138.0.0/16 -j DROP
+# 67.60.39.116
+iptables -I INPUT 949 -s 67.60.0.0/15 -j DROP
+iptables -I INPUT 950 -s 67.60.32.0/20 -j DROP
+# 37.71.75.90
+iptables -I INPUT 951 -s 37.64.0.0/13 -j DROP
+# 67.211.143.42
+iptables -I INPUT 952 -s 67.211.128.0/19 -j DROP
+# 62.151.178.229
+iptables -I INPUT 953 -s 62.151.176.0/21 -j DROP
