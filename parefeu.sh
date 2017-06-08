@@ -258,6 +258,7 @@ iptables -A INPUT -s 182.37.8.25 -j DROP
 iptables -A INPUT -s 182.44.35.233 -j DROP
 iptables -A INPUT -s 182.44.100.250 -j DROP
 iptables -A INPUT -s 182.44.125.194 -j DROP
+iptables -A INPUT -s 182.58.177.21 -j DROP
 iptables -A INPUT -s 182.100.67.4 -j DROP
 iptables -A INPUT -s 182.100.67.40 -j DROP
 iptables -A INPUT -s 182.100.67.62 -j DROP
@@ -357,7 +358,7 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 954) / IP address blocking range (Next 954)
+# Plage d'adresses IP bloquees (Prochain 967) / IP address blocking range (Next 967)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -821,6 +822,7 @@ iptables -I INPUT 234 -s 185.25.164.0/22 -j DROP
 iptables -I INPUT 235 -s 195.200.244.0/23 -j DROP
 # 85.111.38.130
 iptables -I INPUT 236 -s 85.111.0.0/17 -j DROP
+# 93.3.92.228
 # 93.6.154.107
 iptables -I INPUT 237 -s 93.0.0.0/11 -j DROP
 # 52.233.30.47
@@ -2205,3 +2207,27 @@ iptables -I INPUT 951 -s 37.64.0.0/13 -j DROP
 iptables -I INPUT 952 -s 67.211.128.0/19 -j DROP
 # 62.151.178.229
 iptables -I INPUT 953 -s 62.151.176.0/21 -j DROP
+# 82.194.90.11
+iptables -I INPUT 954 -s 82.194.64.0/19 -j DROP
+# 77.188.218.197
+iptables -I INPUT 955 -s 77.176.0.0/12 -j DROP
+# 2.5.237.209
+iptables -I INPUT 956 -s 2.5.0.0/16 -j DROP
+# 162.156.193.79
+iptables -I INPUT 957 -s 162.156.0.0/15 -j DROP
+iptables -I INPUT 958 -s 162.156.0.0/16 -j DROP
+iptables -I INPUT 959 -s 162.156.192.0/22 -j DROP
+# 65.182.141.249
+iptables -I INPUT 960 -s 65.182.128.0/20 -j DROP
+# 73.240.235.72
+iptables -I INPUT 961 -s 73.240.0.0/16 -j DROP
+# 170.250.130.153
+iptables -I INPUT 962 -s 170.250.0.0/16 -j DROP
+# 24.20.81.205
+iptables -I INPUT 963 -s 24.20.0.0/15 -j DROP
+# 67.211.129.180
+iptables -I INPUT 964 -s 67.211.129.0/24 -j DROP
+# 92.232.94.121
+iptables -I INPUT 965 -s 92.232.0.0/16 -j DROP
+# 117.239.232.59
+iptables -I INPUT 966 -s 117.239.224.0/20 -j DROP
