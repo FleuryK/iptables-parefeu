@@ -35,6 +35,7 @@ iptables -A INPUT -s 39.190.153.89 -j DROP
 iptables -A INPUT -s 39.190.169.110 -j DROP
 iptables -A INPUT -s 41.38.104.245 -j DROP
 iptables -A INPUT -s 41.42.30.103 -j DROP
+iptables -A INPUT -s 41.76.171.18 -j DROP
 iptables -A INPUT -s 41.82.54.160 -j DROP
 iptables -A INPUT -s 41.82.165.52 -j DROP
 iptables -A INPUT -s 41.139.7.139 -j DROP
@@ -245,6 +246,7 @@ iptables -A INPUT -s 137.74.40.43 -j DROP
 iptables -A INPUT -s 151.79.192.75 -j DROP
 iptables -A INPUT -s 151.227.144.254 -j DROP
 iptables -A INPUT -s 151.235.134.31 -j DROP
+iptables -A INPUT -s 154.70.87.145 -j DROP
 iptables -A INPUT -s 154.126.79.77 -j DROP
 iptables -A INPUT -s 171.9.11.29 -j DROP
 iptables -A INPUT -s 171.48.43.215 -j DROP
@@ -301,6 +303,7 @@ iptables -A INPUT -s 185.136.151.63 -j DROP
 iptables -A INPUT -s 185.136.151.107 -j DROP
 iptables -A INPUT -s 193.252.205.15 -j DROP
 iptables -A INPUT -s 196.43.235.219 -j DROP
+iptables -A INPUT -s 196.196.83.105 -j DROP
 iptables -A INPUT -s 196.200.176.73 -j DROP
 iptables -A INPUT -s 196.210.215.165 -j DROP
 iptables -A INPUT -s 196.220.231.199 -j DROP
@@ -370,7 +373,7 @@ iptables -A INPUT -s 222.186.160.107 -j DROP
 iptables -A INPUT -s 222.244.226.12 -j DROP
 iptables -A INPUT -s 223.153.119.137 -j DROP
 
-# Plage d'adresses IP bloquees (Prochain 996) / IP address blocking range (Next 996)
+# Plage d'adresses IP bloquees (Prochain 1082) / IP address blocking range (Next 1082)
 # 2.176.20.199
 iptables -I INPUT 1 -s 2.176.0.0/16 -j DROP
 # 2.178.124.192
@@ -425,6 +428,7 @@ iptables -I INPUT 30 -s 46.119.112.0/20 -j DROP
 iptables -I INPUT 31 -s 46.151.52.0/24 -j DROP
 # 52.36.180.97
 iptables -I INPUT 32 -s 52.32.0.0/11 -j DROP
+# 52.71.224.136
 # 52.79.157.217
 iptables -I INPUT 33 -s 52.64.0.0/12 -j DROP
 iptables -I INPUT 34 -s 52.79.0.0/16 -j DROP
@@ -623,7 +627,9 @@ iptables -I INPUT 133 -s 155.133.82.0/24 -j DROP
 # 158.58.133.43
 iptables -I INPUT 134 -s 158.58.128.0/21 -j DROP
 # 158.69.52.184
+# 158.69.53.43
 # 158.69.126.144
+# 158.69.127.9
 iptables -I INPUT 135 -s 158.69.0.0/16 -j DROP
 # 159.122.133.231
 iptables -I INPUT 136 -s 159.122.0.0/16 -j DROP
@@ -803,6 +809,7 @@ iptables -I INPUT 217 -s 212.83.160.0/19 -j DROP
 # 212.84.160.184
 iptables -I INPUT 218 -s 212.84.160.0/19 -j DROP
 # 212.129.26.190
+# 212.129.56.220
 iptables -I INPUT 219 -s 212.129.0.0/18 -j DROP
 # 213.174.22.114
 iptables -I INPUT 220 -s 213.174.22.0/24 -j DROP
@@ -984,7 +991,9 @@ iptables -I INPUT 305 -s 190.51.0.0/16 -j DROP
 iptables -I INPUT 306 -s 122.172.0.0/17 -j DROP
 # 82.113.72.174
 iptables -I INPUT 307 -s 82.113.64.0/19 -j DROP
+# 166.144.145.54
 # 166.149.75.102
+# 166.248.73.70
 iptables -I INPUT 308 -s 166.128.0.0/9 -j DROP
 # 37.49.224.160
 iptables -I INPUT 309 -s 37.49.224.0/24 -j DROP
@@ -1258,6 +1267,7 @@ iptables -I INPUT 433 -s 182.68.0.0/16 -j DROP
 iptables -I INPUT 434 -s 79.181.160.0/20 -j DROP
 # 77.94.103.179
 iptables -I INPUT 435 -s 77.94.96.0/21 -j DROP
+# 78.200.208.117
 # 78.203.248.197
 # 78.207.182.88
 # 78.216.16.195
@@ -1538,6 +1548,7 @@ iptables -I INPUT 568 -s 190.11.160.0/19 -j DROP
 iptables -I INPUT 569 -s 153.34.0.0/15 -j DROP
 # 37.20.230.118
 iptables -I INPUT 570 -s 37.20.128.0/17 -j DROP
+# 73.130.68.239
 # 73.221.181.176
 iptables -I INPUT 571 -s 73.0.0.0/8 -j DROP
 iptables -I INPUT 572 -s 73.221.0.0/16 -j DROP
@@ -1784,6 +1795,7 @@ iptables -I INPUT 693 -s 185.36.81.0/24 -j DROP
 iptables -I INPUT 694 -s 191.104.0.0/13 -j DROP
 iptables -I INPUT 695 -s 191.108.0.0/14 -j DROP
 # 68.33.123.70
+# 68.61.88.142
 iptables -I INPUT 696 -s 68.32.0.0/11 -j DROP
 iptables -I INPUT 697 -s 68.33.0.0/16 -j DROP
 # 98.116.222.34
@@ -1863,6 +1875,7 @@ iptables -I INPUT 741 -s 97.106.0.0/16 -j DROP
 # 185.153.17.97
 # 185.153.17.98
 # 185.153.18.8
+# 185.153.19.99
 # 185.153.19.199
 iptables -I INPUT 742 -s 185.153.16.0/22 -j DROP
 # 188.143.36.208
@@ -1907,6 +1920,7 @@ iptables -I INPUT 764 -s 79.180.224.0/20 -j DROP
 # 64.250.212.59
 iptables -I INPUT 765 -s 64.250.192.0/19 -j DROP
 # 52.169.53.153 (Sorry Microsoft)
+# 52.176.3.189 (Sorry Microsoft)
 iptables -I INPUT 766 -s 52.145.0.0/16 -j DROP
 iptables -I INPUT 767 -s 52.146.0.0/15 -j DROP
 iptables -I INPUT 768 -s 52.148.0.0/14 -j DROP
@@ -2010,6 +2024,7 @@ iptables -I INPUT 823 -s 92.39.240.0/20 -j DROP
 iptables -I INPUT 824 -s 62.232.236.0/24 -j DROP
 # 213.32.14.162
 iptables -I INPUT 825 -s 213.32.0.0/17 -j DROP
+# 98.101.204.112
 # 98.102.44.33
 iptables -I INPUT 826 -s 98.100.0.0/14 -j DROP
 # 77.231.252.103
@@ -2076,6 +2091,7 @@ iptables -I INPUT 859 -s 185.15.148.0/22 -j DROP
 iptables -I INPUT 860 -s 87.0.0.0/16 -j DROP
 # 179.63.255.249
 iptables -I INPUT 861 -s 179.63.252.0/22 -j DROP
+# 87.198.47.141
 # 87.198.120.80
 iptables -I INPUT 862 -s 87.198.0.0/16 -j DROP
 # 96.236.66.162
@@ -2155,7 +2171,9 @@ iptables -I INPUT 905 -s 72.234.0.0/15 -j DROP
 # 24.4.209.66
 iptables -I INPUT 906 -s 24.0.0.0/12 -j DROP
 iptables -I INPUT 907 -s 24.4.0.0/15 -j DROP
+# 71.201.65.108
 # 71.202.166.141
+# 71.205.116.164
 iptables -I INPUT 908 -s 71.192.0.0/12 -j DROP
 iptables -I INPUT 909 -s 71.202.0.0/16 -j DROP
 # 94.219.249.50
@@ -2204,6 +2222,9 @@ iptables -I INPUT 933 -s 151.75.0.0/16 -j DROP
 # 72.184.93.52
 iptables -I INPUT 934 -s 72.176.0.0/12 -j DROP
 # 50.193.74.148
+# 50.235.128.185
+# 50.235.200.138
+# 50.250.221.238
 iptables -I INPUT 935 -s 50.128.0.0/9 -j DROP
 # 74.194.6.5
 iptables -I INPUT 936 -s 74.192.0.0/14 -j DROP
@@ -2239,6 +2260,7 @@ iptables -I INPUT 952 -s 67.211.128.0/19 -j DROP
 iptables -I INPUT 953 -s 62.151.176.0/21 -j DROP
 # 82.194.90.11
 iptables -I INPUT 954 -s 82.194.64.0/19 -j DROP
+# 77.179.164.6
 # 77.188.218.197
 iptables -I INPUT 955 -s 77.176.0.0/12 -j DROP
 # 2.5.237.209
@@ -2311,3 +2333,154 @@ iptables -I INPUT 993 -s 104.169.160.0/19 -j DROP
 iptables -I INPUT 994 -s 209.213.224.0/19 -j DROP
 # 45.55.200.114
 iptables -I INPUT 995 -s 45.55.0.0/16 -j DROP
+# 83.53.195.146
+iptables -I INPUT 996 -s 83.53.0.0/16 -j DROP
+# 178.60.157.79
+iptables -I INPUT 997 -s 178.60.128.0/18 -j DROP
+# 82.16.156.232
+# 82.19.102.201
+iptables -I INPUT 998 -s 82.16.0.0/14 -j DROP
+# 151.80.37.193 (Kimsufi Server ?)
+# 151.80.142.230 (Kimsufi Server ?)
+iptables -I INPUT 999 -s 151.80.0.0/16 -j DROP
+# 128.79.53.228
+iptables -I INPUT 1000 -s 128.78.0.0/15 -j DROP
+iptables -I INPUT 1001 -s 128.79.0.0/16 -j DROP
+# 47.39.86.134
+iptables -I INPUT 1002 -s 47.32.0.0/12 -j DROP
+iptables -I INPUT 1003 -s 47.48.0.0/14 -j DROP
+# 184.162.141.20
+iptables -I INPUT 1004 -s 184.160.0.0/14 -j DROP
+iptables -I INPUT 1005 -s 184.162.141.0/24 -j DROP
+# 24.60.190.188
+iptables -I INPUT 1006 -s 24.60.0.0/14 -j DROP
+iptables -I INPUT 1007 -s 24.60.0.0/15 -j DROP
+# 131.196.166.226
+iptables -I INPUT 1008 -s 131.196.0.0/16 -j DROP
+iptables -I INPUT 1009 -s 131.196.164.0/22 -j DROP
+iptables -I INPUT 1010 -s 131.196.166.0/23 -j DROP
+# 199.89.53.87
+iptables -I INPUT 1011 -s 199.89.52.0/22 -j DROP
+iptables -I INPUT 1012 -s 199.89.53.80/29 -j DROP
+# 84.98.249.248
+iptables -I INPUT 1013 -s 84.96.0.0/13 -j DROP
+# 73.92.148.251
+iptables -I INPUT 1014 -s 73.92.0.0/15 -j DROP
+# 37.187.109.46
+iptables -I INPUT 1015 -s 37.187.0.0/16 -j DROP
+# 104.204.41.65
+iptables -I INPUT 1016 -s 104.204.0.0/16 -j DROP
+# 113.200.162.214
+iptables -I INPUT 1017 -s 113.200.0.0/15 -j DROP
+# 188.95.79.222
+iptables -I INPUT 1018 -s 188.95.72.0/21 -j DROP
+# 83.240.243.226
+iptables -I INPUT 1019 -s 83.240.128.0/17 -j DROP
+# 73.130.68.239
+iptables -I INPUT 1020 -s 73.130.0.0/16 -j DROP
+# 62.162.192.235
+iptables -I INPUT 1021 -s 62.162.0.0/16 -j DROP
+# 109.158.206.92
+iptables -I INPUT 1022 -s 109.144.0.0/12 -j DROP
+# 79.134.150.42
+iptables -I INPUT 1023 -s 79.134.150.0/24 -j DROP
+# 35.128.27.249
+iptables -I INPUT 1024 -s 35.128.0.0/18 -j DROP
+# 79.43.122.89
+iptables -I INPUT 1025 -s 79.42.0.0/15 -j DROP
+# 134.255.252.113
+iptables -I INPUT 1026 -s 134.255.0.0/16 -j DROP
+iptables -I INPUT 1027 -s 134.255.252.0/22 -j DROP
+# 79.137.86.3
+iptables -I INPUT 1028 -s 79.137.64.0/18 -j DROP
+# 94.34.222.95
+iptables -I INPUT 1029 -s 94.32.0.0/13 -j DROP
+# 88.164.19.212
+iptables -I INPUT 1030 -s 88.160.0.0/11 -j DROP
+# 134.35.239.190
+iptables -I INPUT 1031 -s 134.35.0.0/16 -j DROP
+iptables -I INPUT 1032 -s 134.35.232.0/21 -j DROP
+# 184.69.127.250
+iptables -I INPUT 1033 -s 184.64.0.0/13 -j DROP
+# 79.52.155.28
+iptables -I INPUT 1034 -s 79.52.0.0/15 -j DROP
+# 50.250.221.238
+iptables -I INPUT 1035 -s 50.250.192.0/18 -j DROP
+# 24.183.36.6
+iptables -I INPUT 1036 -s 24.176.0.0/13 -j DROP
+iptables -I INPUT 1037 -s 24.183.32.0/20 -j DROP
+# 23.233.109.49
+iptables -I INPUT 1038 -s 23.233.0.0/17 -j DROP
+iptables -I INPUT 1039 -s 23.233.108.0/22 -j DROP
+# 95.123.201.228
+iptables -I INPUT 1040 -s 95.123.0.0/16 -j DROP
+# 71.205.116.164
+iptables -I INPUT 1041 -s 71.205.0.0/16 -j DROP
+# 93.85.82.92
+iptables -I INPUT 1042 -s 93.84.0.0/15 -j DROP
+# 24.160.52.129
+iptables -I INPUT 1043 -s 24.160.0.0/13 -j DROP
+iptables -I INPUT 1044 -s 24.168.0.0/15 -j DROP
+iptables -I INPUT 1045 -s 24.170.0.0/17 -j DROP
+# 46.105.181.47
+iptables -I INPUT 1046 -s 46.105.0.0/16 -j DROP
+# 81.158.202.21
+iptables -I INPUT 1047 -s 81.128.0.0/11 -j DROP
+# 186.151.194.202
+iptables -I INPUT 1048 -s 186.151.194.200/29 -j DROP
+# 80.181.109.241
+iptables -I INPUT 1049 -s 80.181.0.0/16 -j DROP
+# 68.61.88.142
+iptables -I INPUT 1050 -s 68.61.0.0/16 -j DROP
+# 151.65.99.93
+iptables -I INPUT 1051 -s 151.65.0.0/16 -j DROP
+# 87.92.165.20
+iptables -I INPUT 1052 -s 87.92.0.0/14 -j DROP
+# 213.202.228.176
+iptables -I INPUT 1053 -s 213.202.228.0/23 -j DROP
+# 204.9.152.30
+iptables -I INPUT 1054 -s 204.9.152.0/21 -j DROP
+# 81.244.29.117
+iptables -I INPUT 1055 -s 81.244.0.0/14 -j DROP
+# 99.101.65.1
+iptables -I INPUT 1056 -s 99.0.0.0/9 -j DROP
+# 71.121.236.206
+iptables -I INPUT 1057 -s 71.96.0.0/11 -j DROP
+# 216.164.229.106
+iptables -I INPUT 1058 -s 216.164.0.0/16 -j DROP
+iptables -I INPUT 1059 -s 216.164.224.0/19 -j DROP
+iptables -I INPUT 1060 -s 216.164.224.0/21 -j DROP
+# 95.233.187.85
+iptables -I INPUT 1061 -s 95.232.0.0/15 -j DROP
+# 74.136.238.77
+iptables -I INPUT 1062 -s 74.128.0.0/13 -j DROP
+iptables -I INPUT 1063 -s 74.136.0.0/14 -j DROP
+iptables -I INPUT 1064 -s 74.140.0.0/15 -j DROP
+# 79.77.134.121
+iptables -I INPUT 1065 -s 79.64.0.0/12 -j DROP
+# 71.62.74.10
+iptables -I INPUT 1066 -s 71.56.0.0/13 -j DROP
+iptables -I INPUT 1067 -s 71.62.0.0/16 -j DROP
+# 67.77.76.2
+iptables -I INPUT 1068 -s 67.76.0.0/15 -j DROP
+# 156.34.46.127
+iptables -I INPUT 1069 -s 156.34.0.0/16 -j DROP
+iptables -I INPUT 1070 -s 156.34.32.0/20 -j DROP
+# 97.89.149.254
+iptables -I INPUT 1071 -s 97.80.0.0/12 -j DROP
+iptables -I INPUT 1072 -s 97.89.128.0/19 -j DROP
+# 77.98.192.59
+iptables -I INPUT 1073 -s 77.96.0.0/13 -j DROP
+# 104.160.48.219
+iptables -I INPUT 1074 -s 104.160.48.0/20 -j DROP
+# 76.102.80.45
+iptables -I INPUT 1075 -s 76.96.0.0/11 -j DROP
+iptables -I INPUT 1076 -s 76.102.0.0/15 -j DROP
+# 104.218.140.228
+iptables -I INPUT 1077 -s 104.218.136.0/21 -j DROP
+# 108.180.129.213
+iptables -I INPUT 1078 -s 108.180.0.0/15 -j DROP
+iptables -I INPUT 1079 -s 108.180.0.0/16 -j DROP
+iptables -I INPUT 1080 -s 108.180.128.0/22 -j DROP
+# 84.194.31.46
+iptables -I INPUT 1081 -s 84.192.0.0/14 -j DROP
