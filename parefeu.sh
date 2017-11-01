@@ -90,7 +90,34 @@ iptables -A INPUT -m geoip --src-cc AZ -j DROP
 iptables -A INPUT -m geoip --src-cc PY -j DROP
 iptables -A INPUT -m geoip --src-cc NO -j DROP
 iptables -A INPUT -m geoip --src-cc LA -j DROP
+iptables -A INPUT -m geoip --src-cc LK -j DROP
+iptables -A INPUT -m geoip --src-cc TG -j DROP
+iptables -A INPUT -m geoip --src-cc JO -j DROP
+iptables -A INPUT -m geoip --src-cc MK -j DROP
+iptables -A INPUT -m geoip --src-cc YE -j DROP
+iptables -A INPUT -m geoip --src-cc BY -j DROP
+iptables -A INPUT -m geoip --src-cc GT -j DROP
+iptables -A INPUT -m geoip --src-cc FI -j DROP
+iptables -A INPUT -m geoip --src-cc KE -j DROP
+iptables -A INPUT -m geoip --src-cc GR -j DROP
+iptables -A INPUT -m geoip --src-cc MD -j DROP
+iptables -A INPUT -m geoip --src-cc PK -j DROP
+iptables -A INPUT -m geoip --src-cc PS -j DROP
+iptables -A INPUT -m geoip --src-cc ME -j DROP
+iptables -A INPUT -m geoip --src-cc EU -j DROP
+iptables -A INPUT -m geoip --src-cc TZ -j DROP
+iptables -A INPUT -m geoip --src-cc BA -j DROP
+iptables -A INPUT -m geoip --src-cc CI -j DROP
+iptables -A INPUT -m geoip --src-cc NI -j DROP
+iptables -A INPUT -m geoip --src-cc GH -j DROP
+iptables -A INPUT -m geoip --src-cc SA -j DROP
+iptables -A INPUT -m geoip --src-cc LR -j DROP
+iptables -A INPUT -m geoip --src-cc HK -j DROP
 iptables -A INPUT -s 91.121.91.82 -j DROP
+iptables -A INPUT -s 91.134.243.207 -j DROP
+iptables -A INPUT -s 137.74.119.47 -j DROP
+iptables -A INPUT -s 151.80.37.193 -j DROP
+iptables -A INPUT -s 151.80.142.230 -j DROP
 iptables -A INPUT -s 213.32.14.162 -j DROP
 iptables -I INPUT 1 -s 74.208.0.0/16 -j DROP #74.208.161.179
 iptables -I INPUT 2 -s 75.64.0.0/13 -j DROP #75.65.219.19
@@ -106,6 +133,20 @@ iptables -I INPUT 11 -s 92.233.0.0/16 -j DROP #92.233.140.27
 iptables -I INPUT 12 -s 37.120.160.0/19 -j DROP #37.120.186.215
 iptables -I INPUT 13 -s 195.154.0.0/16 -j DROP #195.154.102.221
 iptables -I INPUT 14 -s 62.210.0.0/16 -j DROP #62.210.192.216
+iptables -I INPUT 15 -s 217.182.0.0/16 -j DROP #217.182.253.227
+iptables -I INPUT 16 -s 164.132.0.0/16 -j DROP #164.132.107.155
+iptables -I INPUT 17 -s 51.254.0.0/15 -j DROP #51.254.102.115
+iptables -I INPUT 18 -s 173.198.192.0/18 -j DROP #173.198.243.74
+iptables -I INPUT 19 -s 173.198.243.72/30 -j DROP #173.198.243.74
+iptables -I INPUT 20 -s 18.165.0.0/16 -j DROP #18.171.5.2
+iptables -I INPUT 21 -s 18.166.0.0/15 -j DROP #18.171.5.2
+iptables -I INPUT 22 -s 18.168.0.0/14 -j DROP #18.171.5.2
+iptables -I INPUT 23 -s 18.172.0.0/15 -j DROP #18.171.5.2
+iptables -I INPUT 24 -s 18.174.0.0/16 -j DROP #18.171.5.2
+iptables -I INPUT 25 -s 92.222.0.0/16 -j DROP #92.222.84.103
+iptables -I INPUT 26 -s 5.189.160.0/20 -j DROP #5.189.172.203
+iptables -A OUTPUT -p udp -m udp -m string --hex-string '|03|rev|12|poneytelecom|02|eu' --algo bm -j DROP
+iptables -A OUTPUT -p udp -m udp -m string --hex-string '|06|proxad|03|net' --algo bm -j DROP
 
 # IPv6
 ip6tables -t filter -A INPUT -m geoip --src-cc CN -j DROP
@@ -180,3 +221,26 @@ ip6tables -t filter -A INPUT -m geoip --src-cc AZ -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc PY -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc NO -j DROP
 ip6tables -t filter -A INPUT -m geoip --src-cc LA -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc LK -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc TG -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc JO -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc MK -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc YE -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc BY -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc GT -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc FI -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc KE -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc GR -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc MD -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc PK -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc PS -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc ME -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc EU -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc TZ -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc BA -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc CI -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc NI -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc GH -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc SA -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc LR -j DROP
+ip6tables -t filter -A INPUT -m geoip --src-cc HK -j DROP
