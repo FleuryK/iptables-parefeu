@@ -12,7 +12,7 @@ ip6tables -t filter -P OUTPUT DROP
 ip6tables -t filter -P INPUT DROP
 ip6tables -t filter -P FORWARD DROP
 
-# Connexion établie / Connection established
+# Connexion etablie / Connection established
 iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
 ip6tables -t filter -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
@@ -48,12 +48,12 @@ iptables -t filter -A INPUT -m geoip --src-cc LK,TG,JO,MK,YE,BY,GT,FI,KE,GR -j D
 iptables -t filter -A INPUT -m geoip --src-cc MD,PK,PS,ME,EU,TZ,BA,CI,NI,GH -j DROP
 iptables -t filter -A INPUT -m geoip --src-cc SA,LR,HK,BH,GA,HR,CR,ZM,UZ,SO -j DROP
 
-# Plages d'adresses IP bloquées / IP range blocked
+# Plages d'adresses IP bloquees / IP range blocked
 iptables -A INPUT -s 194.53.142.0/24 -j DROP # Pour les IP / For IP 194.53.142.42, 194.53.142.90, 194.53.142.153, 194.53.142.231
 iptables -A INPUT -s 185.254.188.0/24 -j DROP # Pour l'IP 185.254.188.215
 iptables -A INPUT -s 84.54.36.0/23 -j DROP # Pour l'IP 84.54.36.126
 
-# Adresses IP bloquées / IP address blocked
+# Adresses IP bloquees / IP address blocked
 iptables -A INPUT -s 37.49.224.122 -j DROP
 iptables -A INPUT -s 42.11.193.6 -j DROP
 iptables -A INPUT -s 191.96.249.23 -j DROP
@@ -133,12 +133,9 @@ iptables -A OUTPUT -p udp --dport 9987 -j ACCEPT
 # Ping vers OVH (surveillance/monitoring) INPUT
 iptables -A INPUT -i ens3 -p icmp --source 37.187.231.251 ACCEPT # mrtg-rbx-100, mrtg-sdg-100, mrtg-gra-100, mrtg-bhs-100
 iptables -A INPUT -i ens3 -p icmp --source 151.80.231.244 -j ACCEPT # mrtg-rbx-101
-iptables -A INPUT -i ens3 -p icmp --source 151.80.231.245 -j ACCEPT #
-mrtg-rbx-102
-iptables -A INPUT -i ens3 -p icmp --source 151.80.231.246 -j ACCEPT #
-mrtg-rbx-103
-iptables -A INPUT -i ens3 -p icmp --source 151.80.231.247 -j ACCEPT #
-mrtg-gra-101
+iptables -A INPUT -i ens3 -p icmp --source 151.80.231.245 -j ACCEPT # mrtg-rbx-102
+iptables -A INPUT -i ens3 -p icmp --source 151.80.231.246 -j ACCEPT # mrtg-rbx-103
+iptables -A INPUT -i ens3 -p icmp --source 151.80.231.247 -j ACCEPT # mrtg-gra-101
 iptables -A INPUT -i ens3 -p icmp --source a2.ovh.net -j ACCEPT
 iptables -A INPUT -i ens3 -p icmp --source 213.186.33.62 -j ACCEPT
 iptables -A INPUT -i ens3 -p icmp --source 92.222.184.0/24 -j ACCEPT
@@ -192,3 +189,20 @@ iptables -A INPUT -s 54.94.142.218 -j ACCEPT
 # Communication entre le service RTM et le serveur
 iptables -A INPUT -p udp --dport 6100:6200 -j ACCEPT
 iptables -A OUTPUT -p udp --dport 6100:6200 -j ACCEPT
+
+# ICMP pour OVH (surveillance/monitoring)
+#iptables -A INPUT -p icmp -j ACCEPT
+iptables -A OUTPUT -p icmp -j ACCEPT
+
+# NTP
+iptables -A OUTPUT -p tcp --dport 123 -j ACCEPT
+
+# Munin
+iptables -A INPUT -p tcp --dport 4949 -s 127.0.0.1 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 4949 -j ACCEPT
+
+# Ports specifiques
+iptables -A INPUT -p tcp --sport 1024:65535 -j ACCEPT
+iptables -A INPUT -p udp --sport 1024:65535 -j ACCEPT
+iptables -A OUTPUT -p tcp --sport 1024:65535 -j ACCEPT
+iptables -A OUTPUT -p udp --sport 1024:65535 -j ACCEPT
